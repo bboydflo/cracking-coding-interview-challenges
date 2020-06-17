@@ -27,7 +27,7 @@ cd exercises/<project-name>
 yarn start
 ```
 
-## Todo's
+## Docs
 
-- [ ] replace mocha with jest
-- [x] try lerna/monorepo setup
+- [Yarn](https://classic.yarnpkg.com/en/docs)
+- [Lerna](https://github.com/lerna/lerna)
