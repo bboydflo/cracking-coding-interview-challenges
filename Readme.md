@@ -1,24 +1,21 @@
 # Cracking the Coding Interview Challenges
 
+This is a [Yarn](https://yarnpkg.com) monorepo
+
 ## Install dependencies
 
 ```sh
-npm install
+yarn install
 ```
 
-## Start the project
+## Run a single project
 
 ```sh
-npm start
+cd exercises/<project-name>
+yarn start
 ```
-
-> The output is only visible on browser console
-
-Each training challenge can be found together with its solution under `src/training`.
-
-In `src/index.js` uncomment each challenge at a time to see it's output in the console.
 
 ## Todo's
 
 - [ ] replace mocha with jest
-- [ ] try lerna/monorepo setup
+- [x] try lerna/monorepo setup
