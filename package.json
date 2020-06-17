@@ -5,12 +5,16 @@
   "main": "index.js",
   "private": true,
   "workspaces": [
-    "exercises/*"
+    "packages/*"
   ],
   "scripts": {
-    "start": "echo hello world"
+    "test": "jest"
   },
   "keywords": [],
   "author": "Florin Cosmin Onciu",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^26.0.1",
+    "lerna": "^3.22.1"
+  }
 }

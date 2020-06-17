@@ -1,11 +1,23 @@
 # Cracking the Coding Interview Challenges
 
-This is a [Yarn](https://yarnpkg.com) monorepo
-
-## Install dependencies
+This is a monorepo that uses [Lerna](https://lerna.js.org/) and [Yarn](https://yarnpkg.com).
+Make sure both are installed globally.
 
 ```sh
-yarn install
+npm i -g yarn
+yarn global add lerna
+```
+
+## Bootstrap monorepo
+
+```sh
+lerna bootstrap --hoist
+```
+
+## Run tests for all packages
+
+```sh
+yarn test
 ```
 
 ## Run a single project
