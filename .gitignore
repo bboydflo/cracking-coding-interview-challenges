@@ -15,3 +15,6 @@ yarn-error.log*
 
 # Yarn Integrity file
 .yarn-integrity
+
+# used for incremental TypeScript builds
+tsconfig.tsbuildinfo

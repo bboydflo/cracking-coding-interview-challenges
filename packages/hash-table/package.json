@@ -2,7 +2,24 @@
   "name": "hash-table",
   "version": "1.0.0",
   "description": "learning data structures and algorithms in javascript by implementing a hash table",
-  "main": "index.js",
   "author": "Florin",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "npm run clean && npm run compile",
+    "clean": "rm -rf ./dist && rm -rf tsconfig.tsbuildinfo",
+    "compile": "tsc -b tsconfig.json",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "26.0.3",
+    "jest": "26.1.0",
+    "ts-jest": "26.1.1",
+    "typescript": "3.9.5"
+  }
 }
