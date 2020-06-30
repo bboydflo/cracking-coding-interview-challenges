@@ -1,13 +1,5 @@
 # Lerna commands
 
-Lerna create ([read more](https://github.com/lerna/lerna/tree/master/commands/create#readme))
-
-> Create a new lerna-managed package
-
-```sh
-lerna create my-package-name
-```
-
 Lerna Add ([read more](https://github.com/lerna/lerna/tree/master/commands/add#readme))
 
 > Add a dependency to matched packages

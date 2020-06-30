@@ -29,9 +29,9 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "packageshash-table",
+  "name": "packagespractice",
   "author": "Florin Cosmin (Work Mac)",
-  "module": "dist/packageshash-table.esm.js",
+  "module": "dist/packagespractice.esm.js",
   "devDependencies": {
     "husky": "^4.2.5",
     "tsdx": "^0.13.2",
