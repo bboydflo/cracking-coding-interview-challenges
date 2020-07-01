@@ -1,6 +1,6 @@
 # Cracking the Coding Interview Challenges
 
-This is a monorepo that uses [Lerna](https://lerna.js.org/) [Yarn](https://yarnpkg.com) and TSDX
+This is a monorepo that uses [Lerna](https://lerna.js.org/), [Yarn](https://yarnpkg.com) and TSDX.
 Make sure both Yarn and Lerna are installed globally.
 
 ```sh
@@ -16,7 +16,7 @@ lerna bootstrap --hoist
 
 ## Create a new package
 
-Bootstrapo a new `basic` package
+Bootstrapo a new `basic` package using TSDX
 
 ```sh
 yarn new-package packages/<package-name>
@@ -28,7 +28,7 @@ yarn new-package packages/<package-name>
 # using lerna which uses yarn under the hood
 lerna run test
 
-# or cd into packages/package-name and run
+# or cd into packages/<package-name></package-name> and run
 yarn test
 ```
 
@@ -43,3 +43,4 @@ yarn start
 
 - [Yarn](https://classic.yarnpkg.com/en/docs)
 - [Lerna](https://github.com/lerna/lerna)
+- [TSDX](https://github.com/formik/tsdx)
