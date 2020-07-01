@@ -1,5 +1,5 @@
 export const binarySearch = (sortedArray: number[], element: number) => {
-  let min = 0;
+  let min = 0
   let max = sortedArray.length - 1
 
   while (min <= max) {
