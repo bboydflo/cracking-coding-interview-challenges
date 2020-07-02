@@ -9,10 +9,10 @@ describe('simple binary search', () => {
     const elementToSearch = 3
 
     // act
-    const result = binarySearch(sortedArray, elementToSearch)
+    const elIndex = binarySearch(sortedArray, elementToSearch)
 
     // assert
-    expect(result).toEqual(elementToSearch)
+    expect(elIndex).toEqual(2)
   })
 
   it('if element is not in the sorted array expect -1', () => {
@@ -22,10 +22,10 @@ describe('simple binary search', () => {
     const elementToSearch = 12
 
     // act
-    const result = binarySearch(sortedArray, elementToSearch)
+    const elIndex = binarySearch(sortedArray, elementToSearch)
 
     // assert
-    expect(result).toEqual(-1)
+    expect(elIndex).toBe(-1)
   })
 
   it('if array is empty expect -1', () => {
@@ -35,10 +35,10 @@ describe('simple binary search', () => {
     const elementToSearch = 12
 
     // act
-    const result = binarySearch(emptyArray, elementToSearch)
+    const elIndex = binarySearch(emptyArray, elementToSearch)
 
     // assert
-    expect(result).toEqual(-1)
+    expect(elIndex).toBe(-1)
   })
 
   it('if array has only one element and it is the element searched for', () => {
@@ -48,10 +48,10 @@ describe('simple binary search', () => {
     const elementToSearch = 6
 
     // act
-    const result = binarySearch(singleElementArray, elementToSearch)
+    const elIndex = binarySearch(singleElementArray, elementToSearch)
 
     // assert
-    expect(result).toEqual(elementToSearch)
+    expect(elIndex).toBe(0)
   })
 
   it('if array has only one element and it doesn\'t contain the element we\'re searching for expect -1', () => {
@@ -61,10 +61,10 @@ describe('simple binary search', () => {
     const elementToSearch = 12
 
     // act
-    const result = binarySearch(singleElementArray, elementToSearch)
+    const elIndex = binarySearch(singleElementArray, elementToSearch)
 
     // assert
-    expect(result).toEqual(-1)
+    expect(elIndex).toBe(-1)
   })
 
   it('if array has 2 elements and we\'re searching for one of them, return that element', () => {
@@ -74,10 +74,10 @@ describe('simple binary search', () => {
     const elementToSearch = 14
 
     // act
-    const result = binarySearch(sortedArray, elementToSearch)
+    const elIndex = binarySearch(sortedArray, elementToSearch)
 
     // assert
-    expect(result).toEqual(elementToSearch)
+    expect(elIndex).toEqual(1)
   })
 
   it('it can find a negative element in an array which includes negative numbers', () => {
@@ -87,10 +87,10 @@ describe('simple binary search', () => {
     const elementToSearch = -4
 
     // act
-    const result = binarySearch(sortedArray, elementToSearch)
+    const elIndex = binarySearch(sortedArray, elementToSearch)
 
     // assert
-    expect(result).toEqual(elementToSearch)
+    expect(elIndex).toEqual(1)
   })
 
   it('it can find a positive element in an array which includes negative numbers', () => {
@@ -100,9 +100,9 @@ describe('simple binary search', () => {
     const elementToSearch = 6
 
     // act
-    const result = binarySearch(sortedArray, elementToSearch)
+    const elIndex = binarySearch(sortedArray, elementToSearch)
 
     // assert
-    expect(result).toEqual(elementToSearch)
+    expect(elIndex).toEqual(3)
   })
 })
