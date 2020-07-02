@@ -1,20 +1,21 @@
-export const binarySearch = (sortedArray: number[], element: number) => {
-  let min = 0
-  let max = sortedArray.length - 1
+export const binarySearch = (sortedArray: number[], el: number) => {
+  let low = 0
+  let high = sortedArray.length - 1
+  let mid = Math.floor((low + high) / 2)
 
-  while (min <= max) {
-    let middle = Math.floor((min + max) / 2)
-
-    if (element === sortedArray[middle]) {
-      return element
+  while (low <= high) {
+    if (el === sortedArray[mid]) {
+      return el
     }
-    if (element < sortedArray[middle]) {
-      max = middle - 1
+    if (el < sortedArray[mid]) {
+      high = mid - 1
     }
-    if (element > sortedArray[middle]) {
-      min = middle + 1
+    else (el > sortedArray[mid]) {
+      low = mid + 1
     }
+    
+    // update mid
+    mid = Math.floor((low + high) / 2)
   }
-
   return -1
 }
